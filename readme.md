@@ -19,14 +19,23 @@ By default you only need to modify the global variables in the python script onc
 
 
 "pyicloud_api" - enter your appleid username and appleid password.
+
 "text_local_username" - enter your Text Local username.
+
 "text_local_api_hash" - enter the Text Local api hash, you'll find this in Text Local account settings.
+
 "text_local_number_to_text" - input the number you wish to text.
+
 "text_local_sender_name" - this can be anything but it is set to Jarvis.
+
 "text_local_message" - input the message content. If you leave this blank, a random message from the function "write_message_to_send" will be used instead (you can modify the random messages to something else if you want).
+
 "coordinates_to_track_lat" - Enter the latitude coordinates for the location you want to track e.g. your work place.
+
 "coordinates_to_track_long" - Enter the longitude coordinates for the location you want to track e.g. your work place.
+
 "log_file_path" - include a path where the log file can be saved.
+
 "successful_send_sms_flag" - include a path where the flag file can be saved.
 
 For safety, there is a **'Test' parameter** which is set to **True**. If you leave this as is, a text message will not be sent when the script is run. When you are ready to actually send an SMS i.e. after testing is complete, **remove** the test parameter entirely.
