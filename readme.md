@@ -7,15 +7,13 @@ For example, you can text a family member when you reach work automatically with
 
 Before doing anything else you need an iPhone and therefore an AppleID, and an account with Text Local in order to send the actual text.
 
-If you have the above, save the script in a location (any), modify the accompanying com.xxxx.plist so that it points to this script file. Copy the plist into /Library/LaunchDaemons using sudo.
-
-Load the plist using sudo launchctl load -w /Library/LaunchDaemons/xxxxx.plist. By default the property file is configured to run every 5 minutes between 7.40am-8.40am weekday.
+If you have the above, save the script in a location (any), modify the accompanying config.secrets.
 
 The script also checks your iCloud calendar for holidays i.e. if you have an entry in your calendar for 'Holiday' the script terminates because you should not be at work and therefore there is no text to send.
 
 #Configuration
 
-By default you only need to modify the global variables in the python script once the Test parameter is removed (see further down about this parameter):
+By default you only need to modify the parameters in config.secrets and remove the Test parameter in the scripts (see further down about this parameter):
 
 
 "pyicloud_api" - enter your appleid username and appleid password.
